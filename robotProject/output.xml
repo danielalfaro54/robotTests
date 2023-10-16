@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on darwin)" generated="20231016 05:23:31.223" rpa="false" schemaversion="4">
+<suite id="s1" name="addRemoveElements" source="/Users/daniel.alfaro9/PycharmProjects/robotProject/tests/addRemoveElements.robot">
+<test id="s1-t1" name="addRemoveElements" line="16">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://the-internet.herokuapp.com/add_remove_elements/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231016 05:23:31.465" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/add_remove_elements/'.</msg>
+<status status="PASS" starttime="20231016 05:23:31.464" endtime="20231016 05:23:35.781"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231016 05:23:35.782" endtime="20231016 05:23:36.268"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${elementsAdded}</var>
+<value>1</value>
+<value>21</value>
+<value>1</value>
+<iter>
+<var name="${elementsAdded}">1</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.270" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:36.269" endtime="20231016 05:23:36.351"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.364" level="INFO">${buttonsAdded} = 1</msg>
+<status status="PASS" starttime="20231016 05:23:36.351" endtime="20231016 05:23:36.364"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:36.364" endtime="20231016 05:23:36.365"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:36.365" level="INFO">1</msg>
+<status status="PASS" starttime="20231016 05:23:36.365" endtime="20231016 05:23:36.365"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:36.268" endtime="20231016 05:23:36.365"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">2</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.366" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:36.365" endtime="20231016 05:23:36.415"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.423" level="INFO">${buttonsAdded} = 2</msg>
+<status status="PASS" starttime="20231016 05:23:36.415" endtime="20231016 05:23:36.423"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:36.423" endtime="20231016 05:23:36.423"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:36.423" level="INFO">2</msg>
+<status status="PASS" starttime="20231016 05:23:36.423" endtime="20231016 05:23:36.424"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:36.365" endtime="20231016 05:23:36.424"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">3</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.424" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:36.424" endtime="20231016 05:23:36.474"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.482" level="INFO">${buttonsAdded} = 3</msg>
+<status status="PASS" starttime="20231016 05:23:36.474" endtime="20231016 05:23:36.483"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:36.483" endtime="20231016 05:23:36.483"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:36.483" level="INFO">3</msg>
+<status status="PASS" starttime="20231016 05:23:36.483" endtime="20231016 05:23:36.483"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:36.424" endtime="20231016 05:23:36.483"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">4</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.484" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:36.483" endtime="20231016 05:23:36.534"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.541" level="INFO">${buttonsAdded} = 4</msg>
+<status status="PASS" starttime="20231016 05:23:36.534" endtime="20231016 05:23:36.541"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:36.541" endtime="20231016 05:23:36.542"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:36.542" level="INFO">4</msg>
+<status status="PASS" starttime="20231016 05:23:36.542" endtime="20231016 05:23:36.542"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:36.483" endtime="20231016 05:23:36.542"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">5</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.543" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:36.542" endtime="20231016 05:23:36.591"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.600" level="INFO">${buttonsAdded} = 5</msg>
+<status status="PASS" starttime="20231016 05:23:36.591" endtime="20231016 05:23:36.600"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:36.600" endtime="20231016 05:23:36.600"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:36.600" level="INFO">5</msg>
+<status status="PASS" starttime="20231016 05:23:36.600" endtime="20231016 05:23:36.600"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:36.542" endtime="20231016 05:23:36.600"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">6</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.601" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:36.600" endtime="20231016 05:23:36.650"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.658" level="INFO">${buttonsAdded} = 6</msg>
+<status status="PASS" starttime="20231016 05:23:36.650" endtime="20231016 05:23:36.658"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:36.658" endtime="20231016 05:23:36.659"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:36.659" level="INFO">6</msg>
+<status status="PASS" starttime="20231016 05:23:36.659" endtime="20231016 05:23:36.659"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:36.600" endtime="20231016 05:23:36.659"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">7</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.660" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:36.659" endtime="20231016 05:23:36.706"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.716" level="INFO">${buttonsAdded} = 7</msg>
+<status status="PASS" starttime="20231016 05:23:36.706" endtime="20231016 05:23:36.716"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:36.716" endtime="20231016 05:23:36.716"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:36.716" level="INFO">7</msg>
+<status status="PASS" starttime="20231016 05:23:36.716" endtime="20231016 05:23:36.716"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:36.659" endtime="20231016 05:23:36.716"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">8</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.717" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:36.716" endtime="20231016 05:23:36.761"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.770" level="INFO">${buttonsAdded} = 8</msg>
+<status status="PASS" starttime="20231016 05:23:36.761" endtime="20231016 05:23:36.770"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:36.771" endtime="20231016 05:23:36.771"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:36.771" level="INFO">8</msg>
+<status status="PASS" starttime="20231016 05:23:36.771" endtime="20231016 05:23:36.771"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:36.716" endtime="20231016 05:23:36.771"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">9</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.772" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:36.771" endtime="20231016 05:23:36.818"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.826" level="INFO">${buttonsAdded} = 9</msg>
+<status status="PASS" starttime="20231016 05:23:36.818" endtime="20231016 05:23:36.826"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:36.826" endtime="20231016 05:23:36.827"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:36.828" level="INFO">9</msg>
+<status status="PASS" starttime="20231016 05:23:36.827" endtime="20231016 05:23:36.828"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:36.771" endtime="20231016 05:23:36.828"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">10</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.829" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:36.828" endtime="20231016 05:23:36.874"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.882" level="INFO">${buttonsAdded} = 10</msg>
+<status status="PASS" starttime="20231016 05:23:36.874" endtime="20231016 05:23:36.882"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:36.882" endtime="20231016 05:23:36.883"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:36.883" level="INFO">10</msg>
+<status status="PASS" starttime="20231016 05:23:36.883" endtime="20231016 05:23:36.883"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:36.828" endtime="20231016 05:23:36.883"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">11</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.884" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:36.883" endtime="20231016 05:23:36.932"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.941" level="INFO">${buttonsAdded} = 11</msg>
+<status status="PASS" starttime="20231016 05:23:36.932" endtime="20231016 05:23:36.941"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:36.941" endtime="20231016 05:23:36.941"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:36.941" level="INFO">11</msg>
+<status status="PASS" starttime="20231016 05:23:36.941" endtime="20231016 05:23:36.942"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:36.883" endtime="20231016 05:23:36.942"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">12</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.942" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:36.942" endtime="20231016 05:23:36.990"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:36.999" level="INFO">${buttonsAdded} = 12</msg>
+<status status="PASS" starttime="20231016 05:23:36.990" endtime="20231016 05:23:36.999"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:36.999" endtime="20231016 05:23:37.000"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:37.000" level="INFO">12</msg>
+<status status="PASS" starttime="20231016 05:23:37.000" endtime="20231016 05:23:37.000"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:36.942" endtime="20231016 05:23:37.000"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">13</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.001" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:37.000" endtime="20231016 05:23:37.048"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.057" level="INFO">${buttonsAdded} = 13</msg>
+<status status="PASS" starttime="20231016 05:23:37.048" endtime="20231016 05:23:37.057"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:37.057" endtime="20231016 05:23:37.057"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:37.058" level="INFO">13</msg>
+<status status="PASS" starttime="20231016 05:23:37.057" endtime="20231016 05:23:37.058"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:37.000" endtime="20231016 05:23:37.058"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">14</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.058" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:37.058" endtime="20231016 05:23:37.106"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.115" level="INFO">${buttonsAdded} = 14</msg>
+<status status="PASS" starttime="20231016 05:23:37.106" endtime="20231016 05:23:37.115"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:37.115" endtime="20231016 05:23:37.115"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:37.116" level="INFO">14</msg>
+<status status="PASS" starttime="20231016 05:23:37.115" endtime="20231016 05:23:37.116"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:37.058" endtime="20231016 05:23:37.116"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">15</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.116" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:37.116" endtime="20231016 05:23:37.163"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.172" level="INFO">${buttonsAdded} = 15</msg>
+<status status="PASS" starttime="20231016 05:23:37.163" endtime="20231016 05:23:37.172"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:37.172" endtime="20231016 05:23:37.172"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:37.172" level="INFO">15</msg>
+<status status="PASS" starttime="20231016 05:23:37.172" endtime="20231016 05:23:37.172"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:37.116" endtime="20231016 05:23:37.172"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">16</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.173" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:37.173" endtime="20231016 05:23:37.220"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.229" level="INFO">${buttonsAdded} = 16</msg>
+<status status="PASS" starttime="20231016 05:23:37.220" endtime="20231016 05:23:37.229"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:37.229" endtime="20231016 05:23:37.229"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:37.230" level="INFO">16</msg>
+<status status="PASS" starttime="20231016 05:23:37.229" endtime="20231016 05:23:37.230"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:37.172" endtime="20231016 05:23:37.230"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">17</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.230" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:37.230" endtime="20231016 05:23:37.274"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.283" level="INFO">${buttonsAdded} = 17</msg>
+<status status="PASS" starttime="20231016 05:23:37.274" endtime="20231016 05:23:37.283"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:37.283" endtime="20231016 05:23:37.283"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:37.284" level="INFO">17</msg>
+<status status="PASS" starttime="20231016 05:23:37.284" endtime="20231016 05:23:37.284"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:37.230" endtime="20231016 05:23:37.284"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">18</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.285" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:37.284" endtime="20231016 05:23:37.331"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.342" level="INFO">${buttonsAdded} = 18</msg>
+<status status="PASS" starttime="20231016 05:23:37.331" endtime="20231016 05:23:37.342"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:37.342" endtime="20231016 05:23:37.342"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:37.342" level="INFO">18</msg>
+<status status="PASS" starttime="20231016 05:23:37.342" endtime="20231016 05:23:37.342"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:37.284" endtime="20231016 05:23:37.343"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">19</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.343" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:37.343" endtime="20231016 05:23:37.391"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.402" level="INFO">${buttonsAdded} = 19</msg>
+<status status="PASS" starttime="20231016 05:23:37.391" endtime="20231016 05:23:37.402"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:37.402" endtime="20231016 05:23:37.402"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:37.402" level="INFO">19</msg>
+<status status="PASS" starttime="20231016 05:23:37.402" endtime="20231016 05:23:37.402"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:37.343" endtime="20231016 05:23:37.402"/>
+</iter>
+<iter>
+<var name="${elementsAdded}">20</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.403" level="INFO">Clicking button 'xpath=//button[contains(text(),'Add Element')]'.</msg>
+<status status="PASS" starttime="20231016 05:23:37.403" endtime="20231016 05:23:37.454"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${buttonsAdded}</var>
+<arg>${elementsList}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.463" level="INFO">${buttonsAdded} = 20</msg>
+<status status="PASS" starttime="20231016 05:23:37.454" endtime="20231016 05:23:37.463"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<arg>${elementsAdded}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20231016 05:23:37.463" endtime="20231016 05:23:37.464"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${buttonsAdded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231016 05:23:37.464" level="INFO">20</msg>
+<status status="PASS" starttime="20231016 05:23:37.464" endtime="20231016 05:23:37.464"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:37.402" endtime="20231016 05:23:37.464"/>
+</iter>
+<status status="PASS" starttime="20231016 05:23:36.268" endtime="20231016 05:23:37.464"/>
+</for>
+<for flavor="IN RANGE">
+<var>${deleted}</var>
+<value>0</value>
+<value>${elementsAdded}</value>
+<value>1</value>
+<iter>
+<var name="${deleted}">0</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.465" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:37.465" endtime="20231016 05:23:37.681"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:37.681" level="INFO">${elements} = 20</msg>
+<status status="PASS" starttime="20231016 05:23:37.681" endtime="20231016 05:23:37.681"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:37.465" endtime="20231016 05:23:37.682"/>
+</iter>
+<iter>
+<var name="${deleted}">1</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.682" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:37.682" endtime="20231016 05:23:37.906"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:37.907" level="INFO">${elements} = 19</msg>
+<status status="PASS" starttime="20231016 05:23:37.906" endtime="20231016 05:23:37.907"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:37.682" endtime="20231016 05:23:37.907"/>
+</iter>
+<iter>
+<var name="${deleted}">2</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:37.907" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:37.907" endtime="20231016 05:23:38.091"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:38.092" level="INFO">${elements} = 18</msg>
+<status status="PASS" starttime="20231016 05:23:38.092" endtime="20231016 05:23:38.092"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:37.907" endtime="20231016 05:23:38.092"/>
+</iter>
+<iter>
+<var name="${deleted}">3</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:38.093" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:38.092" endtime="20231016 05:23:38.271"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:38.271" level="INFO">${elements} = 17</msg>
+<status status="PASS" starttime="20231016 05:23:38.271" endtime="20231016 05:23:38.271"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:38.092" endtime="20231016 05:23:38.272"/>
+</iter>
+<iter>
+<var name="${deleted}">4</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:38.273" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:38.272" endtime="20231016 05:23:38.457"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:38.458" level="INFO">${elements} = 16</msg>
+<status status="PASS" starttime="20231016 05:23:38.457" endtime="20231016 05:23:38.458"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:38.272" endtime="20231016 05:23:38.458"/>
+</iter>
+<iter>
+<var name="${deleted}">5</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:38.458" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:38.458" endtime="20231016 05:23:38.626"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:38.626" level="INFO">${elements} = 15</msg>
+<status status="PASS" starttime="20231016 05:23:38.626" endtime="20231016 05:23:38.626"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:38.458" endtime="20231016 05:23:38.626"/>
+</iter>
+<iter>
+<var name="${deleted}">6</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:38.627" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:38.626" endtime="20231016 05:23:38.774"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:38.775" level="INFO">${elements} = 14</msg>
+<status status="PASS" starttime="20231016 05:23:38.774" endtime="20231016 05:23:38.775"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:38.626" endtime="20231016 05:23:38.775"/>
+</iter>
+<iter>
+<var name="${deleted}">7</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:38.775" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:38.775" endtime="20231016 05:23:38.925"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:38.925" level="INFO">${elements} = 13</msg>
+<status status="PASS" starttime="20231016 05:23:38.925" endtime="20231016 05:23:38.925"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:38.775" endtime="20231016 05:23:38.925"/>
+</iter>
+<iter>
+<var name="${deleted}">8</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:38.927" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:38.925" endtime="20231016 05:23:39.073"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:39.074" level="INFO">${elements} = 12</msg>
+<status status="PASS" starttime="20231016 05:23:39.073" endtime="20231016 05:23:39.074"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:38.925" endtime="20231016 05:23:39.074"/>
+</iter>
+<iter>
+<var name="${deleted}">9</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:39.074" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:39.074" endtime="20231016 05:23:39.229"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:39.230" level="INFO">${elements} = 11</msg>
+<status status="PASS" starttime="20231016 05:23:39.229" endtime="20231016 05:23:39.230"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:39.074" endtime="20231016 05:23:39.230"/>
+</iter>
+<iter>
+<var name="${deleted}">10</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:39.231" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:39.230" endtime="20231016 05:23:39.332"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:39.333" level="INFO">${elements} = 10</msg>
+<status status="PASS" starttime="20231016 05:23:39.332" endtime="20231016 05:23:39.333"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:39.230" endtime="20231016 05:23:39.333"/>
+</iter>
+<iter>
+<var name="${deleted}">11</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:39.333" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:39.333" endtime="20231016 05:23:39.427"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:39.427" level="INFO">${elements} = 9</msg>
+<status status="PASS" starttime="20231016 05:23:39.427" endtime="20231016 05:23:39.427"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:39.333" endtime="20231016 05:23:39.427"/>
+</iter>
+<iter>
+<var name="${deleted}">12</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:39.428" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:39.427" endtime="20231016 05:23:39.533"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:39.534" level="INFO">${elements} = 8</msg>
+<status status="PASS" starttime="20231016 05:23:39.533" endtime="20231016 05:23:39.534"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:39.427" endtime="20231016 05:23:39.534"/>
+</iter>
+<iter>
+<var name="${deleted}">13</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:39.535" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:39.534" endtime="20231016 05:23:39.631"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:39.631" level="INFO">${elements} = 7</msg>
+<status status="PASS" starttime="20231016 05:23:39.631" endtime="20231016 05:23:39.631"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:39.534" endtime="20231016 05:23:39.631"/>
+</iter>
+<iter>
+<var name="${deleted}">14</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:39.632" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:39.632" endtime="20231016 05:23:39.725"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:39.726" level="INFO">${elements} = 6</msg>
+<status status="PASS" starttime="20231016 05:23:39.725" endtime="20231016 05:23:39.726"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:39.631" endtime="20231016 05:23:39.726"/>
+</iter>
+<iter>
+<var name="${deleted}">15</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:39.726" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:39.726" endtime="20231016 05:23:39.808"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:39.808" level="INFO">${elements} = 5</msg>
+<status status="PASS" starttime="20231016 05:23:39.808" endtime="20231016 05:23:39.808"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:39.726" endtime="20231016 05:23:39.808"/>
+</iter>
+<iter>
+<var name="${deleted}">16</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:39.809" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:39.809" endtime="20231016 05:23:39.884"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:39.884" level="INFO">${elements} = 4</msg>
+<status status="PASS" starttime="20231016 05:23:39.884" endtime="20231016 05:23:39.884"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:39.809" endtime="20231016 05:23:39.884"/>
+</iter>
+<iter>
+<var name="${deleted}">17</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:39.885" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:39.884" endtime="20231016 05:23:39.950"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:39.951" level="INFO">${elements} = 3</msg>
+<status status="PASS" starttime="20231016 05:23:39.950" endtime="20231016 05:23:39.951"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:39.884" endtime="20231016 05:23:39.951"/>
+</iter>
+<iter>
+<var name="${deleted}">18</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:39.951" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:39.951" endtime="20231016 05:23:40.010"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:40.010" level="INFO">${elements} = 2</msg>
+<status status="PASS" starttime="20231016 05:23:40.010" endtime="20231016 05:23:40.010"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:39.951" endtime="20231016 05:23:40.010"/>
+</iter>
+<iter>
+<var name="${deleted}">19</var>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${deleteElementButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231016 05:23:40.011" level="INFO">Clicking button 'xpath=//div[@id='elements']//button[@onclick='deleteElement()']'.</msg>
+<status status="PASS" starttime="20231016 05:23:40.010" endtime="20231016 05:23:40.062"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${elements}</var>
+<arg>${elementsAdded}-${deleted}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231016 05:23:40.062" level="INFO">${elements} = 1</msg>
+<status status="PASS" starttime="20231016 05:23:40.062" endtime="20231016 05:23:40.062"/>
+</kw>
+<status status="PASS" starttime="20231016 05:23:40.010" endtime="20231016 05:23:40.062"/>
+</iter>
+<status status="PASS" starttime="20231016 05:23:37.464" endtime="20231016 05:23:40.062"/>
+</for>
+<doc>Validate that button elements are added and then removed.</doc>
+<status status="PASS" starttime="20231016 05:23:31.463" endtime="20231016 05:23:40.063"/>
+</test>
+<status status="PASS" starttime="20231016 05:23:31.229" endtime="20231016 05:23:40.063"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="addRemoveElements">addRemoveElements</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
